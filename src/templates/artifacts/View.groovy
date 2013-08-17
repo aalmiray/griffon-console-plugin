@@ -1,0 +1,1 @@
+@artifact.package@// view code goes here
