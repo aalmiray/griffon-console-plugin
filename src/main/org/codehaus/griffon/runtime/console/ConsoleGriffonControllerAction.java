@@ -59,6 +59,6 @@ public class ConsoleGriffonControllerAction extends AbstractGriffonControllerAct
     }
 
     protected void doExecute(Object... args) {
-        toolkitAction.doAction();
+        toolkitAction.execute();
     }
 }

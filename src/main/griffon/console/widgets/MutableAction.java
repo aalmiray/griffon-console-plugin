@@ -57,7 +57,13 @@ public class MutableAction extends AbstractObservable {
         return name;
     }
 
-    public void doAction() {
-        runnable.run();
+    public void call() {
+        execute();
+    }
+
+    public void execute() {
+        if (runnable != null) {
+            runnable.run();
+        }
     }
 }

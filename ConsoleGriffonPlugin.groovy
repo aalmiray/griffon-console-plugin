@@ -37,7 +37,7 @@ class ConsoleGriffonPlugin {
     ]
     String title = 'Enables Console support'
     String description = '''
-
+This plugin enables the usage of Griffon in a text-only environment.
 
 Usage
 -----
@@ -49,9 +49,10 @@ The following nodes will become available on a View script upon installing this 
 | bean   | `java.lang.Object` |
 | list   | `java.util.List`   |
 
-
 Configuration
 -------------
 
+Developers are responsible for keeping the application alive once the `ReadyEnd` event
+has been posted to the event bus, otherwise the application will terminate immediately.
 '''
 }

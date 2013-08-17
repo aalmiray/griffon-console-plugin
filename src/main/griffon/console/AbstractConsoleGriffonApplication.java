@@ -27,7 +27,8 @@ import java.lang.reflect.InvocationTargetException;
 import static griffon.util.GriffonExceptionHandler.sanitize;
 
 /**
- * Basic implementation of {@code GriffonApplication} that runs in standalone mode using Console.
+ * Basic implementation of {@code GriffonApplication} that runs in standalone mode using
+ * a text based approach.
  *
  * @author Andres Almiray
  */
@@ -70,10 +71,6 @@ public abstract class AbstractConsoleGriffonApplication extends AbstractGriffonA
 
     public void exit() {
         System.exit(0);
-    }
-
-    public Object createApplicationContainer() {
-        return null;
     }
 
     /**
